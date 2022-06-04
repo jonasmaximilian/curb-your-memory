@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
-
-function Scoreboard(props) {
+function Scoreboard({ currentScore, bestScore }) {
     return (
         <div className='flex justify-around text-white'>
-            <div>Score: {props.score}</div>
-            <div>High score: {props.highScore}</div>
+            <div>Score: {currentScore}</div>
+            <div>High score: {bestScore}</div>
         </div>
     );
 }
